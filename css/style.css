@@ -96,6 +96,10 @@ header {
   height: 30px;
   border-radius: 50%;
   border: 1px solid var(--backdrop);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
 }
 
 .navbar-wrapper {
