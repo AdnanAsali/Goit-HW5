@@ -55,7 +55,10 @@ header {
 }
 
 .is-hidden {
-  display: none !important;
+  visibility: hidden;
+  opacity: 0;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop {
@@ -64,9 +67,11 @@ header {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 99;
+  z-index: 10;
   overflow: hidden;
   background-color: var(--backdrop);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -86,6 +91,8 @@ header {
   left: 50%;
   transform: translate(-50%, 0%);
   top: 220px;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close {
@@ -100,6 +107,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 6px;
+  cursor: pointer;
 }
 
 .navbar-wrapper {

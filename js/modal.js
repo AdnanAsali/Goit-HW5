@@ -1,12 +1,4 @@
 (() => {
-
-    document.querySelector('.call-to-action').addEventListener("click", function(e) 
-    {
-        document.querySelector('.backdrop').classList.toggle("is-hidden");
-        document.querySelector('.modal').classList.toggle("is-hidden");
-    });
-
-
     const refs = {
       openModalBtn: document.querySelector("[data-modal-open]"),
       closeModalBtn: document.querySelector("[data-modal-close]"),
