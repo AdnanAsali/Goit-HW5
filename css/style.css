@@ -8,17 +8,43 @@ a {
   color: black;
 }
 
-ul {
-  padding: 0px;
-  margin: 0px;
-}
-
-li {
-  list-style: none;
-}
-
 img {
   display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+address {
+  font-style: normal;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* CSS Color Pallete Variables */
@@ -48,9 +74,7 @@ img {
 }
 
 /* Nav & Header */
-
 header {
-  /* padding: 26px 0; */
   border-bottom: 1px solid var(--light-gray1);
 }
 
@@ -77,11 +101,7 @@ header {
 .modal {
   display: block;
   width: 528px;
-  /* The height here can be also padding, but it wasnt clear in 
-    the requirements so I assumed the modal's height is fixed and
-    the content within it shall be scrollable */
   height: 581px;
-  padding-bottom: 500px;
   background-color: white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -89,8 +109,8 @@ header {
   position: fixed;
   z-index: 99;
   left: 50%;
-  transform: translate(-50%, 0%);
-  top: 220px;
+  transform: translate(-50%, -50%);
+  top: 50%;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -106,7 +126,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 6px;
   cursor: pointer;
 }
 
@@ -142,23 +161,24 @@ header {
   margin-right: 50px;
 }
 
-.nav-items li a {
+.nav-items li .link {
   font-size: 14px;
   font-weight: 500;
   padding: 32px 0;
+  transition: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-items li a:hover {
+.nav-items li .link:hover {
   color: var(--blue);
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .active {
   position: relative;
 }
 
-.active a {
+.active .link {
   color: var(--blue);
 }
 
@@ -169,7 +189,7 @@ header {
   border-radius: 100px;
   background-color: var(--blue);
   position: absolute;
-  bottom: -32px;
+  bottom: -31px;
   right: 0px;
 }
 
@@ -182,7 +202,7 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.contact-info li a {
+.contact-info li .link {
   display: flex;
   align-items: center;
   font-size: 14px;
@@ -190,9 +210,12 @@ header {
   color: var(--gray);
   fill: var(--gray);
   padding: 32px 0;
+  transition: 250ms;
+  transition-property: color, fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-info li a svg {
+.contact-info li .link svg {
   margin-right: 10px;
 }
 
@@ -200,11 +223,9 @@ header {
   margin-left: 50px;
 }
 
-.contact-info li a:hover {
+.contact-info li .link:hover {
   color: var(--blue);
   fill: var(--blue);
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Heading section */
@@ -252,13 +273,14 @@ header {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: 250ms;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .call-to-action:hover {
   box-shadow: none;
   background-color: var(--active-blue);
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .reasons {
@@ -391,13 +413,16 @@ header {
   background-color: var(--white-shade);
   fill: var(--light-gray3);
   cursor: pointer;
+  transition: 250ms;
+  transition-property: background-color, fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links li:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-links li a {
+.social-links li .link {
   width: 20px;
   height: 20px;
 }
@@ -411,8 +436,6 @@ header {
 .social-links li:hover {
   background-color: var(--blue);
   fill: white;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Portfolio Styling */
@@ -433,6 +456,9 @@ header {
   font-family: "Roboto", sans-serif;
   cursor: pointer;
   background-color: var(--light-bg);
+  transition: 250ms;
+  transition-property: background-color, box-shadow, color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-categories-buttons button.active {
@@ -464,13 +490,14 @@ header {
   margin-left: 30px;
   flex-basis: calc(100% / 3 - 30px);
   position: relative;
+  transition: 250ms;
+  transition-property: box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-card:hover .overlay-wrapper {
@@ -533,6 +560,9 @@ header {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: 250ms;
+  transition-property: border, fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customer:not(:last-child) {
@@ -542,8 +572,6 @@ header {
 .customer:hover {
   border: 1px solid var(--blue);
   fill: var(--blue);
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customer svg {
@@ -569,7 +597,7 @@ footer {
   margin-right: 70px;
 }
 
-.footer-content > a {
+.footer-content > .link {
   font-family: "Raleway", sans-serif;
   color: var(--blue);
   font-size: 24px;
@@ -585,24 +613,25 @@ footer {
   margin-bottom: 5px;
 }
 
-.footer-content .address a {
+.footer-content .address .link {
   color: var(--gray);
   font-style: normal;
+  transition: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.business-details a {
+.business-details .link {
   color: var(--gray);
   font-style: normal;
+  transition: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-content .address a:hover,
 .business-details a:hover {
   color: white;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-links-wrapper {
 }
 
 .social-title {

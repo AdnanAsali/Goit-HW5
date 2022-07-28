@@ -11,11 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <title>WebStudio</title>
   </head>
@@ -24,22 +24,22 @@
     <header>
       <div class="container navbar-wrapper">
         <nav class="navbar">
-          <a class="logo" href="index.html">Web<span>Studio</span></a>
-          <ul class="nav-items">
+          <a class="logo link" href="index.html">Web<span>Studio</span></a>
+          <ul class="list nav-items">
             <li>
-              <a href="index.html"> Studio </a>
+              <a class="link" href="index.html"> Studio </a>
             </li>
             <li class="active">
-              <a href="portfolio.html"> Portfolio </a>
+              <a class="link" href="portfolio.html"> Portfolio </a>
             </li>
             <li>
-              <a href=""> Contacts </a>
+              <a class="link" href=""> Contacts </a>
             </li>
           </ul>
         </nav>
-        <ul class="contact-info">
+        <ul class="list contact-info">
           <li>
-            <a href="mailto:info@devstudio.com">
+            <a class="link" href="mailto:info@devstudio.com">
               <svg width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
@@ -47,7 +47,7 @@
             </a>
           </li>
           <li>
-            <a href="tel:+380961111111">
+            <a class="link" href="tel:+380961111111">
               <svg width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
@@ -61,7 +61,7 @@
     <main>
       <section class="section">
         <div class="container">
-          <ul class="project-categories-buttons">
+          <ul class="list project-categories-buttons">
             <li>
               <button type="button" class="active">All</button>
             </li>
@@ -79,9 +79,16 @@
             </li>
           </ul>
 
-          <ul class="projects">
+          <ul class="list projects">
             <li class="project-card">
-              <a href="">
+              <a class="link" href="">
+                <div class="overlay-wrapper">
+                  <div class="project-overlay">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </div>
+                </div>
                 <img
                   src="./images/project1.jpeg"
                   width="370"
@@ -92,16 +99,9 @@
                   <p class="project-category">Web-Site</p>
                 </div>
               </a>
-              <div class="overlay-wrapper">
-                <div class="project-overlay">
-                  Technoduck is a state-of-the-art coronavirus distribution
-                  platform. Companies use this platform for digital espionage
-                  and attacks on competitors' secure servers.
-                </div>
-              </div>
             </li>
             <li class="project-card">
-              <a href="">
+              <a class="link" href="">
                 <img
                   src="./images/project2.jpeg"
                   width="370"
@@ -111,17 +111,18 @@
                   <h4 class="project-name">Poster New Orlean vs Golden Star</h4>
                   <p class="project-category">Design</p>
                 </div>
-              </a>
-              <div class="overlay-wrapper">
-                <div class="project-overlay">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s,
+
+                <div class="overlay-wrapper">
+                  <div class="project-overlay">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s,
+                  </div>
                 </div>
-              </div>
+              </a>
             </li>
             <li class="project-card">
-              <a href="#">
+              <a class="link" href="#">
                 <img
                   src="./images/project3.jpeg"
                   width="370"
@@ -131,17 +132,18 @@
                   <h4 class="project-name">Seafood Restaurant</h4>
                   <p class="project-category">Apps</p>
                 </div>
-              </a>
-              <div class="overlay-wrapper">
-                <div class="project-overlay">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s,
-                </div>
-              </div>
+
+                <div class="overlay-wrapper">
+                  <div class="project-overlay">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s,
+                  </div>
+                </div></a
+              >
             </li>
             <li class="project-card">
-              <a href="#">
+              <a class="link" href="#">
                 <img
                   src="./images/project4.jpeg"
                   width="370"
@@ -151,17 +153,18 @@
                   <h4 class="project-name">Project Prime</h4>
                   <p class="project-category">Marketing</p>
                 </div>
-              </a>
-              <div class="overlay-wrapper">
-                <div class="project-overlay">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s,
+
+                <div class="overlay-wrapper">
+                  <div class="project-overlay">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s,
+                  </div>
                 </div>
-              </div>
+              </a>
             </li>
             <li class="project-card">
-              <a href="#">
+              <a class="link" href="#">
                 <img
                   src="./images/project5.jpeg"
                   width="370"
@@ -171,17 +174,18 @@
                   <h4 class="project-name">Project Boxes</h4>
                   <p class="project-category">Apps</p>
                 </div>
-              </a>
-              <div class="overlay-wrapper">
-                <div class="project-overlay">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s,
+
+                <div class="overlay-wrapper">
+                  <div class="project-overlay">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s,
+                  </div>
                 </div>
-              </div>
+              </a>
             </li>
             <li class="project-card">
-              <a href="#">
+              <a class="link" href="#">
                 <img
                   src="./images/project6.jpeg"
                   width="370"
@@ -191,17 +195,18 @@
                   <h4 class="project-name">Inspiration has no Borders</h4>
                   <p class="project-category">Web-Site</p>
                 </div>
-              </a>
-              <div class="overlay-wrapper">
-                <div class="project-overlay">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s,
-                </div>
-              </div>
+
+                <div class="overlay-wrapper">
+                  <div class="project-overlay">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s,
+                  </div>
+                </div></a
+              >
             </li>
             <li class="project-card">
-              <a href="#">
+              <a class="link" href="#">
                 <img
                   src="./images/project7.jpeg"
                   width="370"
@@ -211,17 +216,18 @@
                   <h4 class="project-name">Limited Edition</h4>
                   <p class="project-category">Design</p>
                 </div>
-              </a>
-              <div class="overlay-wrapper">
-                <div class="project-overlay">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s,
-                </div>
-              </div>
+
+                <div class="overlay-wrapper">
+                  <div class="project-overlay">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s,
+                  </div>
+                </div></a
+              >
             </li>
             <li class="project-card">
-              <a href="#">
+              <a class="link" href="#">
                 <img
                   src="./images/project8.jpeg"
                   width="370"
@@ -231,17 +237,18 @@
                   <h4 class="project-name">Project LAB</h4>
                   <p class="project-category">Marketing</p>
                 </div>
-              </a>
-              <div class="overlay-wrapper">
-                <div class="project-overlay">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s,
-                </div>
-              </div>
+
+                <div class="overlay-wrapper">
+                  <div class="project-overlay">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s,
+                  </div>
+                </div></a
+              >
             </li>
             <li class="project-card">
-              <a href="#">
+              <a class="link" href="#">
                 <img
                   src="./images/project9.jpeg"
                   width="370"
@@ -251,14 +258,15 @@
                   <h4 class="project-name">Growing Business</h4>
                   <p class="project-category">Apps</p>
                 </div>
-              </a>
-              <div class="overlay-wrapper">
-                <div class="project-overlay">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s,
+
+                <div class="overlay-wrapper">
+                  <div class="project-overlay">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s,
+                  </div>
                 </div>
-              </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -269,51 +277,54 @@
     <footer>
       <div class="container footer-wrapper">
         <div class="footer-content">
-          <a href="index.html">Web<span>Studio</span></a>
+          <a class="link" href="index.html">Web<span>Studio</span></a>
           <address>
             <ul>
               <li class="address">
                 <a
                   href="https://www.google.com/maps/place/695+Park+Ave,+New+York,+NY+10065,+USA/data=!4m2!3m1!1s0x89c258ebe8836e8f:0xa007c44e7c4aa0eb?sa=X&ved=2ahUKEwit7O6Lxs34AhWE8rsIHbtUCtcQ8gF6BAgJEAE"
                 >
-                  695 Park Ave, New York, NY 10065, United States
+                  695 Park Ave, New York, NY 10065, <br />
+                  United States
                 </a>
               </li>
               <li class="business-details">
-                <a href="mailto:info@example.com">info@example.com</a>
+                <a class="link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
               </li>
               <li class="business-details">
-                <a href="tel:+12127724150">+1 212-772-4150</a>
+                <a class="link" href="tel:+12127724150">+1 212-772-4150</a>
               </li>
             </ul>
           </address>
         </div>
         <div class="social-links-wrapper">
           <p class="social-title">FIND US ON</p>
-          <ul class="social-links">
+          <ul class="list social-links">
             <li>
-              <a href="">
+              <a class="link" href="">
                 <svg>
                   <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="">
+              <a class="link" href="">
                 <svg>
                   <use href="./images/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="">
+              <a class="link" href="">
                 <svg>
                   <use href="./images/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="">
+              <a class="link" href="">
                 <svg>
                   <use href="./images/icons.svg#linkedin"></use>
                 </svg>
