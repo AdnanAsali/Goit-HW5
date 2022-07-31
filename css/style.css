@@ -417,7 +417,7 @@ header {
   height: 44px;
   border-radius: 50%;
   background-color: var(--white-shade);
-  color: var(--light-gray3);
+  color: white;
   cursor: pointer;
   transition: 250ms;
   transition-property: background-color, color;
