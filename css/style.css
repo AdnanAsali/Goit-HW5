@@ -404,26 +404,12 @@ header {
   justify-content: center;
 }
 
-.social-links li {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: var(--white-shade);
-  fill: var(--light-gray3);
-  cursor: pointer;
-  transition: 250ms;
-  transition-property: background-color, fill;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
-}
-
-.social-links li:not(:last-child) {
+/* ---- footer social links */
+.footer-social-item:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-links li .link {
+.footer-social-item .link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -431,24 +417,50 @@ header {
   height: 44px;
   border-radius: 50%;
   background-color: var(--white-shade);
-  fill: var(--light-gray3);
+  color: var(--light-gray3);
   cursor: pointer;
   transition: 250ms;
-  transition-property: background-color, fill;
+  transition-property: background-color, color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-links li svg {
-  width: 20px;
-  height: 20px;
-  fill: inherit;
+.footer-social-item svg {
+  fill: currentColor;
 }
 
-.social-links li a:hover, .social-links li a:focus {
+.footer-social-item a:hover, .footer-social-item a:focus {
   background-color: var(--blue);
-  fill: white;
+  color: white;
 }
 
+/* Team-social-item */
+.team-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-social-item .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--white-shade);
+  color: var(--light-gray3);
+  cursor: pointer;
+  transition: 250ms;
+  transition-property: background-color, color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-social-item svg {
+  fill: currentColor;
+}
+
+.team-social-item a:hover, .team-social-item a:focus {
+  background-color: var(--blue);
+  color: white;
+}
 /* Portfolio Styling */
 
 .project-categories-buttons {
